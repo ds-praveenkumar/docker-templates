@@ -3,6 +3,7 @@ do
     if [  $i != "Dockerbuild.sh" ]
       then
        echo "file: $i"
-       docker build --tag my-image-name:$(date +%s) -f $i 
+       chmod +x ./*
+       docker build -f ./$i 
     fi
 done 
