@@ -14,7 +14,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      
+    - name: Auto Tagger
+      uses: VegetableGarden/beet@0.0.3
+      
     - name: Build the Docker image
       run: |
         chmod +x ./*
         ./Dockerbuild.sh
+  
