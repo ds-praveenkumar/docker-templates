@@ -8,6 +8,7 @@ COPY package*.json ./
 
 RUN npm install
 
+RUN node -v
 
 COPY . .
 
