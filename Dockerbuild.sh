@@ -4,6 +4,6 @@ do
       then
        echo "file: $i"
        chmod +x ./*
-       docker build -f ./$i
+       docker build ./$i
     fi
 done 
