@@ -1,6 +1,6 @@
 FROM openjdk:8
 WORKDIR /usr/src/myapp
 COPY . /usr/src/myapp
-RUN java --version
+RUN java -version
 # RUN javac Main.java
 # CMD ["java", "Main"]
